@@ -5,7 +5,7 @@ metadata:
   labels:
     app: payment
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: payment
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: payment-backend
-        image: shajalahamedcse/payment-service:0.0.2
+        image: shajalahamedcse/payment-service:0.0.3
         ports:
         - containerPort: 80

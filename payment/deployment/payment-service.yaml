@@ -5,11 +5,11 @@ metadata:
   labels:
     app: payment-service
 spec:
-  type: NodePort
+  #type: NodePort
   ports:
   - port: 5000
     protocol: TCP
-    nodePort: 30036
+   # nodePort: 30036
 
   selector:
     app: payment
